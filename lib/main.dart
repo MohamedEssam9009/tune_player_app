@@ -14,7 +14,7 @@ class TuneApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Tune Player App',
       theme: ThemeData(useMaterial3: false),
-      home: TuneView(),
+      home: const TuneView(),
     );
   }
 }
