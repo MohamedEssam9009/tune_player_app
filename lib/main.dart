@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:tune_player_app/views/tune_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const TuneApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class TuneApp extends StatelessWidget {
+  const TuneApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Tune Player App',
-      theme: ThemeData(
-        useMaterial3: false
-      ),
+      theme: ThemeData(useMaterial3: false),
+      home: TuneView(),
     );
   }
 }
-
