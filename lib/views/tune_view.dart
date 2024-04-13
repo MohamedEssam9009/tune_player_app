@@ -23,15 +23,17 @@ class TuneView extends StatelessWidget {
         backgroundColor: const Color(0xFF253238),
         title: const Text('Flutter Tune'),
       ),
-      body: Column(children: getTuneItems()),
+      body: Column(
+        children: tuneColors.map((e) => TuneItem(color: e)).toList(),
+      ),
     );
   }
 
-  List<TuneItem> getTuneItems() {
-    List<TuneItem> items = [];
-    for (Color color in tuneColors) {
-      items.add(TuneItem(color: color));
-    }
-    return items;
-  }
+  // List<TuneItem> getTuneItems() {
+  //   List<TuneItem> items = [];
+  //   for (Color color in tuneColors) {
+  //     items.add(TuneItem(color: color));
+  //   }
+  //   return items;
+  // }
 }
