@@ -22,19 +22,19 @@ class TuneView extends StatelessWidget {
             color: Colors.orange,
           ),
           TuneItem(
-            color: Colors.blue,
+            color: Colors.yellow,
           ),
           TuneItem(
             color: Colors.green,
           ),
           TuneItem(
-            color: Colors.black,
+            color: Colors.greenAccent,
           ),
           TuneItem(
-            color: Colors.yellow,
+            color: Colors.blue,
           ),
           TuneItem(
-            color: Colors.red,
+            color: Colors.purple,
           ),
         ],
       ),
